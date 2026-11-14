@@ -2,10 +2,6 @@ provider "ovh" {
 
 }
 
-provider "random" {
-
-}
-
-provider "tls" {
+provider "wireguard" {
 
 }

@@ -4,13 +4,9 @@ terraform {
       source  = "ovh/ovh"
       version = "~> 2.24"
     }
-    random = {
-      source  = "hashicorp/random"
-      version = "~> 3.9"
-    }
-    tls = {
-      source  = "hashicorp/tls"
-      version = "~> 4.4"
+    wireguard = {
+      source  = "ojford/wireguard"
+      version = "~> 0.4"
     }
   }
 }

@@ -29,13 +29,6 @@ variable "instance_flavor" {
   default     = "d2-2"
 }
 
-variable "instance_ssh_key_name" {
-  type        = string
-  description = "The name of an existing SSH Key name"
-  default     = null
-  nullable    = true
-}
-
 variable "private_network_id" {
   type        = string
   description = "The ID of the OpenStack network you want to connect to"
@@ -53,4 +46,11 @@ variable "private_network_instance_ip" {
   description = "The IP of the instance inside the private subnet"
   default     = null
   nullable    = true
+}
+
+variable "wireguard_port" {
+  type        = number
+  description = "The port WireGuard should listen to on the instance"
+  default     = 51820
+  nullable    = false
 }
